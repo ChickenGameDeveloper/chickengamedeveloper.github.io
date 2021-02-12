@@ -28,37 +28,37 @@ h1, h2, h3, h4, h5, p, a {
 
 /*Main home screen*/
 #main {
-    height: 100vh;
-    color: #fff;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 #background {
-    position: absolute;
-    background: #333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    opacity: 0.4;
+  position: absolute;
+  background: #333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.4;
 }
 #backgroundcolor{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  z-index: -2;
 }
 
-/*List Items*/
-#cards ul li .card img{
+
+.card img {
+  width: 85vw;
+  height: auto;
   margin: 0 auto;
-  width: 85%;
 }
-
 
 /*Footer*/
 footer {
@@ -72,8 +72,6 @@ footer {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    justify-items: center;
-    align-items: center;
   }
   
   footer{
@@ -81,20 +79,21 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-column: span 2;
     align-items: center;
-    justify-content: end;
   }
   
   .box{
     grid-column: span 2;
   }
 
-  #cards ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #cards li {
+  .card img {
     width: 20vw;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
+  }
+
+  #cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: space-around;
   }
 }
